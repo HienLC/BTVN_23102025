@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="qlsv_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quản lý SV</h1>
+
+        <form id="studentForm">
+            <div class="form-row">
+                <label for="tenSv">Tên sv:</label>
+                <input type="text" id="tenSv" required>
+            </div>
+
+            <div class="form-row">
+                <label for="namSinh">Năm sinh:</label>
+                <input type="date" id="namSinh" placeholder="dd/mm/yyyy" required>
+            </div>
+
+            <div class="form-row">
+                <label>Giới tính:</label>
+                <div class="input-group">
+                    <input type="radio" id="gioiTinhNam" name="gioiTinh" value="Nam" checked>
+                    <label for="gioiTinhNam">Nam</label>
+                    <input type="radio" id="gioiTinhNu" name="gioiTinh" value="Nữ">
+                    <label for="gioiTinhNu">Nữ</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Môn học:</label>
+                <div class="input-group" id="monHocGroup">
+                    <button type="button" class="add-btn" id="btnAddMonHoc">Thêm môn</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="lop">Lớp:</label>
+                <div class="input-group">
+                    <select id="lopSelect" required></select>
+                    <button type="button" class="add-btn" id="btnAddLop">Thêm lớp</button>
+                </div>
+            </div>
+
+            <button type="submit" id="btnThemSv">Thêm sinh viên</button>
+            <input type="hidden" id="editRowIndex">
+        </form>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Lớp</th>
+                    <th>Năm sinh</th>
+                    <th>Giới tính</th>
+                    <th>Môn học</th>
+                    <th>Cập nhật</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

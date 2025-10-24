@@ -1,0 +1,154 @@
+/* qlsv_style.css (Dùng cho qlsv.html) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Định dạng Form */
+#studentForm {
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row label:first-child {
+    font-weight: bold;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.form-row input[type="date"] {
+    max-width: 150px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-group label {
+    font-weight: normal;
+}
+
+.add-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Định dạng cho ô Lớp */
+#lopSelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btnThemSv {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Định dạng Bảng */
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#studentTable th,
+#studentTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#studentTable thead tr {
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+}
+
+#studentTable th:nth-child(1) {
+    width: 25%;
+}
+
+#studentTable th:nth-child(2) {
+    width: 10%;
+}
+
+#studentTable th:nth-child(3) {
+    width: 15%;
+}
+
+#studentTable th:nth-child(4) {
+    width: 10%;
+}
+
+#studentTable th:nth-child(5) {
+    width: 15%;
+}
+
+#studentTable th:nth-child(6) {
+    width: 25%;
+}
+
+.btn-action {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: normal;
+}
+
+.btn-sua {
+    background-color: #3498db;
+}
+
+.btn-xoa {
+    background-color: #e74c3c;
+}
