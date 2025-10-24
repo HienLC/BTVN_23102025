@@ -1,4 +1,3 @@
-/* qlsv_style.css (Dùng cho qlsv.html) */
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -23,7 +22,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Định dạng Form */
 #studentForm {
     margin-bottom: 30px;
 }
@@ -72,7 +70,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Định dạng cho ô Lớp */
 #lopSelect {
     padding: 8px;
     border: 1px solid #ccc;
@@ -89,7 +86,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Định dạng Bảng */
 #studentTable {
     width: 100%;
     border-collapse: collapse;
